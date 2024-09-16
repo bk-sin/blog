@@ -8,13 +8,18 @@ import { useEffect, useRef } from 'react';
 import 'katex/dist/katex.min.css';
 export default function Post({ postData }) {
   const ref = useRef(null);
+
   useEffect(() => {
     if (ref.current) {
       const text = ref.current.innerHTML;
+
       
       const replacedText = text
       .replace(/\$\$([\s\S]*?)\$\$/g, (match, p1) => {
-        return `<div class="katex">${p1.replace(/ \\\n/g, '\\\\ \n')}</div>`;
+        return `<div class="katex" data-display="true">${p1.replace(/ \\\n/g, '\\\\ \n')}</div>`;
+      })
+      .replace(/\$([\s\S]*?)\$/g, (match, p1) => {
+        return `<span class="katex" data-display="false">${p1}</span>`;
       });
 
 
@@ -22,11 +27,11 @@ export default function Post({ postData }) {
 
       const elements = ref.current.querySelectorAll('.katex');
       elements.forEach(el => {
+        const displayMode = el.getAttribute('data-display') === 'true';
         try {
           katex.render(el.textContent, el, {
             throwOnError: false,
-            displayMode: true,
-
+            displayMode,
           });
         } catch (error) {
           console.error('Error rendering KaTeX:', error);
@@ -34,9 +39,6 @@ export default function Post({ postData }) {
       });
     }
   }, [postData.contentHtml]);
-  const contentHtml = `
-  <p>$$\\begin{pmatrix} a &#x26; b \| c &#x26; d \\end{pmatrix}$$</p>\n
-`;
 
   return (
     <Layout>
@@ -48,7 +50,7 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }}  ref={ref} />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} id='math-content' ref={ref} />
       </article>
     </Layout>
   );
@@ -64,7 +66,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id);
-  console.log(postData)
   return {
     props: {
       postData,
