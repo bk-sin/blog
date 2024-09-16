@@ -1,11 +1,13 @@
-import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
-import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
-import Link from 'next/link';
-import Date from '../components/date';
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import utilStyles from "../styles/utils.module.css";
+import { getSortedPostsData } from "../lib/posts";
+import Link from "next/link";
+import Date from "../components/date";
+
 
 export default function Home({ allPostsData }) {
+
   return (
     <Layout home>
       <Head>
@@ -13,7 +15,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Hola, soy <strong>Emi</strong>. Programador Web y Mobile de React. Me pueden contactar a través de{' '}
+          Hola, soy <strong>Emi</strong>. Programador Web y Mobile de React. Me
+          pueden contactar a través de{" "}
           <a href="https://www.linkedin.com/in/emilianoalegre/">LinkedIn</a>.
         </p>
       </section>
@@ -41,5 +44,6 @@ export async function getStaticProps() {
     props: {
       allPostsData,
     },
+    revalidate: 60,
   };
 }
