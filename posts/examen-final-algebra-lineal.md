@@ -6,7 +6,8 @@ tags:
   - algebra
   - gamedevelopment
 ---
-### **Sección 1: Vectores y Operaciones Vectoriales**
+Click en los títulos para ver sus soluciones y una breve explicación.
+### **[Sección 1: Vectores y Operaciones Vectoriales](soluciones-seccion-1-vectores.md)**
 
 1. Dado el vector $A = (3, -2, 5)$ y el vector $B = (1, 4, -2)$, realiza las siguientes operaciones:
     - a) Suma de **A** y **B**.
@@ -16,7 +17,7 @@ tags:
 
 ---
 
-### **Sección 2: Matrices y Transformaciones**
+### **[Sección 2: Matrices y Transformaciones](soluciones-seccion-2-matrices.md)**
 
 1. Dada la matriz de rotación en el plano XY:
     
@@ -46,14 +47,14 @@ tags:
 
 ---
 
-### **Sección 3: Cuaterniones**
+### **[Sección 3: Cuaterniones](soluciones-seccion-3-cuaterniones.md)**
 
 1. Define qué es un cuaternión y por qué es preferible en videojuegos para realizar rotaciones 3D en comparación con las matrices de rotación.
 2. Dado el cuaternión $q=(0,0.707,0.707,0)$, que representa una rotación de $90^\circ$ en el eje Z, aplica este cuaternión a un punto $P = (1, 0, 0)$ y calcula las nuevas coordenadas.
 
 ---
 
-### **Sección 4: Proyecciones y Cámaras**
+### **[Sección 4: Proyecciones y Cámaras](soluciones-seccion-4-proyecciones.md)**
 
 1. Considera un sistema de coordenadas homogéneas y una proyección en perspectiva definida por la siguiente matriz:
     
@@ -72,13 +73,13 @@ tags:
 
 ---
 
-### **Sección 5: Espacios Vectoriales y Colisiones**
+### **[Sección 5: Espacios Vectoriales y Colisiones](soluciones-seccion-5-colisiones.md)**
 
 1. Dos objetos en un juego están en las posiciones $A = (1, 2, 3)$ y $B = (4, 5, 6)$. El objeto **A** tiene un radio de colisión de 2 unidades y el objeto **B** tiene un radio de colisión de 3 unidades. ¿Estos objetos colisionan entre sí? Justifica tu respuesta calculando la distancia entre ellos.
 
 ---
 
-### **Sección 6: Determinantes e Inversas de Matrices**
+### **[Sección 6: Determinantes e Inversas de Matrices](soluciones-seccion-6-determinantes.md)**
 
 1. Calcula el determinante de la siguiente matriz 3x3:
     
@@ -106,14 +107,14 @@ tags:
 
 ---
 
-### **Sección 7: Composición de Transformaciones**
+### **[Sección 7: Composición de Transformaciones](soluciones-seccion-7-composicion-de-transformaciones.md)**
 
 1. Un personaje en un videojuego está inicialmente en la posición $P = (1, 2, 3)$. El personaje es primero trasladado por el vector $T = (3, -2, 5)$, y luego rotado $90^\circ$ alrededor del eje Z. Escribe las matrices de transformación para ambas operaciones y calcula la posición final del personaje después de aplicar las dos transformaciones.
 2. En un motor de juego, aplicas una matriz de rotación $R$ y luego una matriz de escala $S$ a un modelo en 3D. ¿Es lo mismo aplicar primero la escala y luego la rotación? Justifica tu respuesta matemática y visualmente.
 
 ---
 
-### **Sección 8: Autovalores y Autovectores**
+### **[Sección 8: Autovalores y Autovectores](soluciones-seccion-8-autovalores-autovectores.md)**
 
 1. Dada la matriz:
     
@@ -130,19 +131,19 @@ tags:
 
 ---
 
-### **Sección 9: Interpolación Lineal y SLERP**
+### **[Sección 9: Interpolación Lineal y SLERP](soluciones-seccion-9-interpolacion.md)**
 
 1. Define qué es la interpolación lineal (Lerp) y proporciona un ejemplo práctico de cómo se utilizaría en la animación de un personaje en un videojuego, especificando las coordenadas de inicio y fin.
 2. Explica la diferencia entre interpolación lineal (Lerp) y la interpolación esférica (SLERP). En un videojuego 3D, ¿por qué es más conveniente usar SLERP cuando se interpola entre dos rotaciones? Proporciona un ejemplo de cálculo entre dos cuaterniones para ilustrar tu explicación.
 
 ---
 
-### **Sección 10: Aplicación de Autovalores en Compresión de Modelos 3D**
+### **[Sección 10: Aplicación de Autovalores en Compresión de Modelos 3D](soluciones-seccion-10-autovalores-2.md)**
 
 1. Los autovalores y autovectores son fundamentales en la compresión de modelos 3D, como en la reducción de polígonos. Explica cómo se pueden utilizar autovalores para detectar los ejes principales de un modelo 3D y reducir su complejidad sin perder demasiada calidad visual. Da un ejemplo de cómo se aplicaría este proceso a un modelo de un objeto en un juego.
 
 ---
 
-### **Sección 11: Proyección de un Objeto en un Espacio Ortogonal**
+### **[Sección 11: Proyección de un Objeto en un Espacio Ortogonal](soluciones-seccion-11-espacio-ortogonal.md)**
 
 1. Proyecta el vector $V = (3, 4, 5)$ sobre el plano XY usando matrices de proyección. ¿Cómo se vería este objeto proyectado en un videojuego 2D desde una vista ortogonal? Explica la utilidad de las proyecciones ortogonales en juegos en 2D o juegos con estilo isométrico.

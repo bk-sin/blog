@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e8932cb1796f1d67",
+        "id": "5b856aefc3d6d0c6",
         "type": "tabs",
         "children": [
           {
-            "id": "499e928608b3b4f6",
+            "id": "45bf076a2b72c1ea",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -158,10 +158,23 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "499e928608b3b4f6",
+  "active": "45bf076a2b72c1ea",
   "lastOpenFiles": [
-    "pre-rendering.md",
+    "soluciones-seccion-11-espacio-ortogonal.md",
     "examen-final-algebra-lineal.md",
+    "soluciones-seccion-10-autovalores-2.md",
+    "soluciones-seccion-9-interpolacion.md",
+    "soluciones-seccion-8-autovalores-autovectores.md",
+    "soluciones-seccion-7-composicion-de-transformaciones.md",
+    "soluciones-seccion-6-determinantes.md",
+    "soluciones-seccion-5-colisiones.md",
+    "soluciones-seccion-4-proyecciones.md",
+    "soluciones-seccion-3-cuaterniones.md",
+    "soluciones-seccion-2-matrices.md",
+    "soluciones-seccion-1-vectores.md",
+    "soluciones-seccion-4-colisiones.md",
+    "soluciones-seccion-2-cuaterniones.md",
+    "pre-rendering.md",
     "examen-final-algebra-lineal-gamedeveloper.md",
     "notion.md",
     "Examen Final Álgebra Lineal para Desarrolladores  102b5ee9098880f68e2cdd1ad24b43c9.md",

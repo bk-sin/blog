@@ -8,12 +8,12 @@ import { useEffect, useRef } from 'react';
 import 'katex/dist/katex.min.css';
 export default function Post({ postData }) {
   const ref = useRef(null);
-
   useEffect(() => {
     if (ref.current) {
-      const text = ref.current.innerHTML;
+      let text = ref.current.innerHTML;
 
-      
+      text = text.replace(/<a href="([^"]+)\.md">/g, '<a href="$1">')
+
       const replacedText = text
       .replace(/\$\$([\s\S]*?)\$\$/g, (match, p1) => {
         return `<div class="katex" data-display="true">${p1.replace(/ \\\n/g, '\\\\ \n')}</div>`;
